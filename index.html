@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Adrianna Nosal</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="img/favicon.ico">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css"
+		integrity="sha512-TD/aL30dNLN0VaHVoh9voFlNi7ZuWQYtV4bkIJv2ulZ8mEEkZJ7IyGvDthMKvIUwzLmPONnjQlAi55HTERVXpw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+		integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="main.css">
+</head>
+
+<body>
+	<canvas id="canvas-home"></canvas>
+	<header>
+		<nav class="nav">
+			<ul class="nav-list" id="menu">
+				<li class="nav-item" data-menuanchor="home"><a href="#home" class="nav-link">Home</a></li>|
+				<li class="nav-item" data-menuanchor="about"><a href="#about" class="nav-link">About</a></li>|
+				<li class="nav-item" data-menuanchor="skills"><a href="#skills" class="nav-link"">Skills</a></li>|
+					<li class=" nav-item" data-menuanchor="projects"><a href="#projects" class="nav-link">Projects</a></li>|
+				<li class="nav-item"><a href="mailto:addie.nosal@gmail.com"><i class="fas fa-envelope"></i></a></li> |
+				<li class="nav-item"><a href="https://github.com/adriannadev" target="_blank"><i
+							class="fab fa-github"></i></a></li> |
+				<li class="nav-item"><a href="https://www.linkedin.com/in/adriannadev/" target="_blank"><i
+							class="fab fa-linkedin"></i></a></li>
+
+			</ul>
+		</nav>
+	</header>
+
+
+	<div id="fullpage">
+		<div class="section" data-anchor="home"></div>
+		<div class="section" data-anchor="about">
+			<div class="content about">
+				<h1>who am i?</h1>
+				<h2> a creative developer based in UK</h2>
+				<div class="about-me">
+					<img src="img/me.jpg" alt="">
+
+					<p>I graduated with first class in BSc(Hons) Computer Science and Multimedia from Queen Mary,
+						University in London. I'm currently working as a software engineer in finance. However,
+						having studied design at Goldsmiths before, I want to combine my creativity with enthusiasm for
+						coding. I am very interested in working with aesthetic designs, games, AR/VR and I spend most of
+						my free time making games in Unity or learning 3D modelling and animation in Blender and
+						Autodesk Maya.
+					</p>
+
+				</div>
+			</div>
+		</div>
+		<div class="section" data-anchor="skills">
+			<div class="content">
+				<h1>skills</h1>
+				<div class="skills-container">
+					<div class="skill">
+						<h3><i class="fab fa-js-square skill-icon"></i> <i class="fab fa-react skill-icon"></i> <i
+								class="fas fa-file-code skill-icon"></i></h3>
+						<h3>web development</h3>
+						<p>My journey with HTML, CSS and JavaScript started when I was a kid and
+							it soon turned into passion. Now I have experience using
+							multiple technologies, both front and back-end including Bootstrap, Node with Express, React
+							as well as Java Springboot and Thymeleaf.<br /> I have also used different databases
+							including SQL and MongoDB.
+
+						</p>
+					</div>
+					<div class="skill">
+						<h3><i class="fab fa-java skill-icon"></i></h3>
+						<h3>java</h3>
+						<p>I' gained a lot of experience using Java during my time at university 'and in trainings after
+							my graduation.
+							At my current position I'm actively involved in development of a Spring application hosted
+							on Kubernetes on the internal cloud.
+							<br />
+							Also, during my exchange at Nanyang Technological University, as a group project I made an
+							Android application for cyclers using Google Maps API.
+						</p>
+					</div>
+					<div class="skill">
+						<h3><i class="fas fa-vr-cardboard skill-icon"></i></h3>
+						<h3>game development</h3>
+						<p> I enjoy working on game development projects in my free time, mainly focusing on 3D games in
+							Unity using C#,
+							including AR applications using Vuforia.
+							<br />I would love to work with more AR/VR technologies and become more skillful in 3D
+							design.
+							I'm always eager to expand my knowledge and currently in my spare time I'm learning 3D
+							modelling
+							and animation in Blender and Autodesk Maya.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section" data-anchor="projects">
+			<div class="content projects">
+
+				<h1>projects</h1>
+				<div class="projects-nav">
+					<h2><span class="section-subtitle" onclick="showWeb()">
+							web development</span> |
+						<span class="section-subtitle" onclick="showGame()">
+							game development </span>
+					</h2>
+				</div>
+				<div id="webdev" class="portfolio active-section">
+					<div class="portfolio-item fade">
+						<div class="portfolio-item-info portoflio-overlay">
+							<h3>Ecommerce app</h3>
+							<p>shoe shop app </p>
+							<p>React + Node + Express + MongoDB</p>
+							<a href="https://github.com/adriannadev/shoe-shop" target="_blank"><i
+									class="fab fa-github"></i></a>
+							<a href="https://myshoes-shop.herokuapp.com" target="_blank"><i
+									class="fas fa-desktop"></i></a>
+						</div>
+						<img src="img/shoeshop.png" class="portfolio-img">
+					</div>
+					<div class="portfolio-item fade">
+						<div class="portfolio-item-info portoflio-overlay">
+							<h3>E-bike design demo</h3>
+							<p>design prototype</p>
+							<p>HTML + CSS</p>
+							<a href="https://github.com/adriannadev/ebikedemo" target="_blank"><i
+									class="fab fa-github"></i></a>
+							<a href="https://swytch.netlify.app/index.html" target="_blank"><i
+									class="fas fa-desktop"></i></a>
+						</div>
+						<img src="img/swytch.png" class="portfolio-img">
+					</div>
+					<div class="portfolio-item fade">
+						<div class="portfolio-item-info portoflio-overlay">
+							<h3>Top Secret</h3>
+							<p>secret sharing app </p>
+							<p>Node + Google OAuth + MongoDB</p>
+							<a href="https://github.com/adriannadev/Secrets-WebApp" target="_blank"><i
+									class="fab fa-github"></i></a>
+							<a href="https://secrets-keeper.herokuapp.com/" target="_blank"><i
+									class="fas fa-desktop"></i></a>
+						</div>
+						<img src="img/topsecret.png" class="portfolio-img">
+					</div>
+					<div class="portfolio-item fade">
+						<div class="portfolio-item-info portoflio-overlay">
+							<h3>Ideaz</h3>
+							<p>sticky notes app</p>
+							<p>React + Material UI</p>
+							<a href="https://github.com/adriannadev/Ideaz" target="_blank"><i
+									class="fab fa-github"></i></a>
+						</div>
+						<img src="img/ideaz.png" class="portfolio-img">
+					</div>
+					<div class="portfolio-item fade">
+						<div class="portfolio-item-info portoflio-overlay">
+							<h3>Porsche model</h3>
+							<p>threejs 3D model app</p>
+							<p>HTMl + CSS + threejs</p>
+							<a href="https://github.com/adriannadev/porsche-model" target="_blank"><i
+									class="fab fa-github"></i></a>
+							<a href="https://adriannadev.github.io/porsche-model/" target="_blank"><i
+									class="fas fa-desktop"></i></a>
+						</div>
+
+						<img src="img/porsche.png" class="portfolio-img">
+					</div>
+
+					<div class="portfolio-item fade">
+						<div class="portfolio-item-info portoflio-overlay">
+							<h3>To Do List</h3>
+							<p>Simple to do list app</p>
+							<p>Node + MongoDB</p>
+							<a href="https://github.com/adriannadev/ToDoList-v2" target="_blank"><i
+									class="fab fa-github"></i></a>
+							<a href="https://get-things-done-here.herokuapp.com/" target="_blank"><i
+									class="fas fa-desktop"></i></a>
+						</div>
+
+						<img src="img/todolist.png" class="portfolio-img">
+					</div>
+					<a class="prev" onclick="plusSlides(-1)">❮</a>
+					<a class="next" onclick="plusSlides(1)">❯</a>
+					<div style="text-align:center">
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+					</div>
+				</div>
+				<div id="gamedev" class="portfolio">
+					<div class="portfolio-item fade">
+						<div class="portfolio-item-info portoflio-overlay">
+							<h3>zombie shooter</h3>
+							<p>3d zombie fps</p>
+							<p>Unity</p>
+							<a href="https://sharemygame.com/@addie/zombieshooter" target="_blank"><i
+									class="fas fa-gamepad"></i></a>
+						</div>
+						<img src="img/zombie.png" class="portfolio-img">
+					</div>
+					<div class="portfolio-item fade">
+						<div class="portfolio-item-info portoflio-overlay">
+							<h3>corona killer</h3>
+							<p>3d rails shooter</p>
+							<p>Unity</p>
+							<a href="https://sharemygame.com/@addie/coronakiller" target="_blank"><i
+									class="fas fa-gamepad"></i></a>
+						</div>
+						<img src="img/coronakiller.png" class="portfolio-img">
+					</div>
+					<div class="portfolio-item fade">
+						<div class="portfolio-item-info portoflio-overlay">
+							<h3>space rock</h3>
+							<p>3d rocket game</p>
+							<p>Unity</p>
+							<a href="https://sharemygame.com/@addie/space-rock" target="_blank"><i
+									class="fas fa-gamepad"></i></a>
+						</div>
+						<img src="img/spacerock.png" class="portfolio-img">
+					</div>
+					<div class="portfolio-item fade">
+						<div class="portfolio-item-info portoflio-overlay">
+							<h3>chess model</h3>
+							<p>low poly model </p>
+							<p>Blender</p>
+						</div>
+						<img src="img/chess.png" class="portfolio-img">
+					</div>
+					<div class="portfolio-item fade">
+						<div class="portfolio-item-info portoflio-overlay">
+							<h3>bowling scene</h3>
+							<p>bowling model + animation</p>
+							<p>Blender</p>
+						</div>
+						<img src="img/bowling.png" class="portfolio-img">
+					</div>
+					<a class="prev" onclick="plusSlides(-1)">❮</a>
+					<a class="next" onclick="plusSlides(1)">❯</a>
+					<div style="text-align:center">
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"
+			integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg=="
+			crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script type="application/javascript">
+
+			// Slideshow
+			var slideIndex = 1;
+			showSlides(slideIndex);
+			myTimer = setInterval(() => plusSlides(1), 3000);
+
+			function plusSlides(n) {
+				clearInterval(myTimer);
+				if (n < 0) {
+					showSlides(slideIndex -= 1)
+				} else {
+					showSlides(slideIndex += 1)
+				}
+
+				if (n === -1) {
+					myTimer = setInterval(() => plusSlides(n + 2), 3000);
+				} else {
+					myTimer = setInterval(() => plusSlides(n + 1), 3000);
+				}
+
+				console.log(slideIndex);
+			}
+
+			function showSlides(n) {
+				var i;
+				var projectSection = document.getElementsByClassName('active-section')[0];
+				var slides = projectSection.getElementsByClassName("portfolio-item");
+				var dots = projectSection.getElementsByClassName("dot");
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				if (n > slides.length) {
+					slideIndex = 1
+				}
+				if (n < 1) {
+					slideIndex = slides.length
+				}
+
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active-dot", "");
+				}
+				slides[slideIndex - 1].style.display = "block";
+				dots[slideIndex - 1].className += " active-dot";
+			}
+
+			// Web/game dev
+			var webDev = document.getElementById('webdev');
+			var gameDev = document.getElementById('gamedev');
+
+
+			function showWeb() {
+				webDev.className += " active-section";
+				gameDev.className = gameDev.className.replace(" active-section", "");
+				webDev.style.display = 'block';
+				gameDev.style.display = 'none';
+
+			}
+
+			function showGame() {
+				gameDev.className += " active-section";
+				webDev.className = webDev.className.replace(" active-section", "");
+				gameDev.style.display = 'block';
+				webDev.style.display = 'none';
+
+			}
+
+			//Fullpage.js for scroll
+			var myFullpage = new fullpage('#fullpage', {
+				navigation: true,
+				anchors: ['home', 'about', 'skills', 'projects', 'contact'],
+				menu: '#menu',
+				verticalCentered: true,
+				responsiveWidth: 1024,
+				bigSectionsDestination: top
+
+			});
+		</script>
+		<script type="module">
+
+			import * as THREE from 'https://cdn.skypack.dev/pin/three@v0.130.1-bsY6rEPcA1ZYyZeKdbHd/mode=imports/optimized/three.js';
+
+			import { OrbitControls } from 'https://cdn.skypack.dev/three@v0.130.1/examples/jsm/controls/OrbitControls.js';
+
+			let camera, scene, renderer;
+			let text, lineText;
+
+			let theta = 0;
+			const radius = 100;
+
+			init();
+			animate();
+
+
+			function showText()
+			{
+
+				const loader = new THREE.FontLoader();
+				loader.load( 'Roboto_Mono_Bold.json', function ( font ) {
+
+					const color = 0xF38BA0;
+
+					const matDark = new THREE.LineBasicMaterial( {
+						color: 0x99154E,
+						side: THREE.DoubleSide
+					} );
+
+					const matLite = new THREE.MeshBasicMaterial( {
+						color: color,
+						transparent: true,
+						opacity: 0.4,
+						side: THREE.DoubleSide
+					} );
+
+					const message = "   Hello,\nI'm Adrianna.";
+
+					const shapes = font.generateShapes( message, 100 );
+
+					const geometry = new THREE.ShapeGeometry( shapes );
+
+					geometry.computeBoundingBox();
+
+					const xMid = - 0.5 * ( geometry.boundingBox.max.x - geometry.boundingBox.min.x );
+
+					geometry.translate( xMid, 200, 0 );
+
+					//Make text shape
+
+					text = new THREE.Mesh( geometry, matLite );
+					text.position.z = - 150;
+					if (window.innerWidth<1024){
+						text.scale.set(0.5, 0.5, 0.5);
+					}
+					scene.add( text );
+
+					//Make line text shape
+
+					const holeShapes = [];
+
+					for ( let i = 0; i < shapes.length; i ++ ) {
+
+						const shape = shapes[ i ];
+
+						if ( shape.holes && shape.holes.length > 0 ) {
+
+							for ( let j = 0; j < shape.holes.length; j ++ ) {
+
+								const hole = shape.holes[ j ];
+								holeShapes.push( hole );
+
+							}
+
+						}
+
+					}
+
+					shapes.push.apply( shapes, holeShapes );
+
+					lineText = new THREE.Object3D();
+
+					for ( let i = 0; i < shapes.length; i ++ ) {
+
+						const shape = shapes[ i ];
+
+						const points = shape.getPoints();
+						const geometry = new THREE.BufferGeometry().setFromPoints( points );
+
+						geometry.translate( xMid, 200, 0 );
+
+						const lineMesh = new THREE.Line( geometry, matDark );
+						lineText.add( lineMesh );
+
+					}
+					if (window.innerWidth<1024){
+					lineText.scale.set(0.5, 0.5, 0.5)
+				}
+					scene.add( lineText );
+
+				} );
+
+
+
+
+			}
+			function init( ) {
+
+				camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 1, 10000 );
+				camera.position.set( 0, -300, 900 );
+				
+
+				scene = new THREE.Scene();
+				scene.background = new THREE.Color( 0xf0f0f0 );
+
+				const light = new THREE.PointLight( 0xffffff, 1 );
+				scene.add( camera );
+				camera.add( light );
+
+
+				//Make cubes
+				const colors = [ 0xF0D9E7, 0xF38BA0, 0xF3BAD6 ];
+				const geometry = new THREE.BoxGeometry( 10, 10, 10 );
+
+				for ( let i = 0; i < 700; i ++ ) {
+
+					const layer = ( i % 3 );
+
+					const object = new THREE.Mesh( geometry, new THREE.MeshLambertMaterial( { color: colors[ layer ] } ) );
+
+					object.position.x = Math.random() * 2000- 1000;
+					object.position.y = Math.random() * 2000 - 1000
+					object.position.z = Math.random() * 800 - 400;
+
+					object.rotation.x = Math.random() * 2 * Math.PI;
+					object.rotation.y = Math.random() * 2 * Math.PI;
+					object.rotation.z = Math.random() * 2 * Math.PI;
+
+					object.scale.x = Math.random() + 0.5;
+					object.scale.y = Math.random() + 0.5;
+					object.scale.z = Math.random() + 0.5;
+
+					scene.add( object );
+
+				}
+
+
+				const canvas = document.querySelector('#canvas-home');
+				renderer = new THREE.WebGLRenderer({canvas});
+				renderer.setPixelRatio( window.devicePixelRatio );
+				renderer.setSize( window.innerWidth, window.innerHeight );
+				showText();	
+				window.addEventListener( 'resize', onWindowResize );
+
+			}
+
+			function onWindowResize() {
+
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+
+				renderer.setSize( window.innerWidth, window.innerHeight );
+
+			}
+
+			function animate() {
+
+				requestAnimationFrame( animate );
+
+				render();
+
+			}
+
+			function render() {
+
+				theta += 0.1;
+
+				camera.position.x = radius * Math.sin( THREE.MathUtils.degToRad( theta ) );
+				camera.position.y = radius * Math.sin( THREE.MathUtils.degToRad( theta ) ) - 300;
+				camera.position.z = radius * Math.cos( THREE.MathUtils.degToRad( theta ) ) + 900;
+
+				camera.lookAt( scene.position );
+				renderer.render( scene, camera );
+			}
+		</script>
+	</div>
+</body>
+
+</html>
